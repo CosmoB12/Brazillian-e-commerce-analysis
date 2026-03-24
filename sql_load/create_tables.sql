@@ -18,7 +18,7 @@ CREATE TABLE olist_order_fact(
 );
 
 CREATE TABLE olist_products(
-    prodcuct_id VARCHAR(50) PRIMARY KEY,
+    product_id VARCHAR(50) PRIMARY KEY,
     product_category VARCHAR(100),
     product_name_length INT,
     Product_description_length INT,
@@ -40,13 +40,13 @@ CREATE TABLE olist_sellers(
 CREATE TABLE olist_order_items(
     order_id VARCHAR(40),
     order_item_id INT,
-    prodcuct_id VARCHAR(40),
+    product_id VARCHAR(50),
     seller_id VARCHAR(40),
     shipping_limit_date TIMESTAMP,
     price NUMERIC,
     freight_value NUMERIC,
     PRIMARY KEY(order_id, order_item_id),
-    FOREIGN KEY(prodcuct_id) REFERENCES olist_products(prodcuct_id),
+    FOREIGN KEY(product_id) REFERENCES olist_products(product_id),
     FOREIGN KEY(seller_id) REFERENCES olist_sellers(seller_id)
 );
 
@@ -55,6 +55,8 @@ CREATE TABLE product_category_translation(
     product_category VARCHAR(100),
     product_category_english VARCHAR(100)
 )
+
+
 
 
 
