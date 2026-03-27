@@ -34,7 +34,6 @@ CREATE TABLE olist_sellers(
     seller_zipcode VARCHAR(10),
     seller_city VARCHAR(50),
     seller_state VARCHAR(4)
-
 );
 
 CREATE TABLE olist_order_items(
