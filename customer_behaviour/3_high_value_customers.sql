@@ -39,4 +39,4 @@ WHERE
 
 
 ORDER BY   
-    order_number DESC
+    total_value DESC

@@ -49,6 +49,13 @@ CREATE TABLE olist_order_items(
     FOREIGN KEY(seller_id) REFERENCES olist_sellers(seller_id)
 );
 
+CREATE TABLE olist_locations(
+    geolocation_zip_code VARCHAR(6),
+    geolocation_lat NUMERIC,
+    geolocation_lng NUMERIC,
+    geolocation_city VARCHAR(50),
+    geoloaction_state VARCHAR(4)
+)
 
 CREATE TABLE product_category_translation(
     product_category VARCHAR(100),
