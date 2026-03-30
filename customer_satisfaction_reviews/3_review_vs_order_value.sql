@@ -1,15 +1,13 @@
 WITH order_total AS (
     SELECT 
         order_id,
-        SUM(price + freight_value) AS total_order_value
-          
+        SUM(price + freight_value) AS total_order_value    
     FROM 
         olist_order_items 
     GROUP BY
         order_id
     ORDER BY
-        total_order_value DESC
-        
+        total_order_value DESC      
 )
 SELECT
     review_score,

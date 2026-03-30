@@ -8,7 +8,5 @@ SELECT
         END)* 100.0 /COUNT(*),
         2
     )AS late_deliveries_percentage
-
-
 FROM
     olist_order_fact

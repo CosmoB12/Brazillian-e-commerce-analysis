@@ -40,16 +40,6 @@ CREATE TABLE olist_order_items_raw(
     freight_value NUMERIC
 );
 
-CREATE TABLE olist_customer_reviews(
-    review_id VARCHAR(50),
-    order_id VARCHAR (50),
-    review_score INT,
-    review_comment_title VARCHAR(40),
-    review_comment_message TEXT,
-    review_creation_date TIMESTAMP,
-    review_answer_date TIMESTAMP
-)
-
 
 
 COPY olist_order_raw
