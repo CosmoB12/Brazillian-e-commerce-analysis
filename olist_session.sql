@@ -1,2 +1,2 @@
 SELECT * 
-FROM product_category_translation
+FROM olist_customer_reviews

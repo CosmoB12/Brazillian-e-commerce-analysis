@@ -30,3 +30,21 @@ ORDER BY
     month
 
 
+SELECT
+    EXTRACT(YEAR FROM order_purchase_date) AS year,
+    EXTRACT(MONTH FROM order_purchase_date) AS month,
+    SUM(price + freight_value) AS revenue
+
+
+FROM
+    olist_order_items AS oi
+JOIN
+    olist_order_fact AS oo ON 
+    oi.order_id = oo.order_id
+
+GROUP BY
+    EXTRACT(YEAR FROM order_purchase_date),
+    EXTRACT(MONTH FROM order_purchase_date)
+
+ORDER BY
+    month
