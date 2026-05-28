@@ -72,7 +72,7 @@ The core issue is this: **Olist is optimised for transaction volume, not custome
 
 - **Revenue is concentrated — a minority of categories and sellers drive the majority of platform income.** This concentration is both an asset and a risk: it creates clear focus areas for investment, but also means the business is exposed if top-performing segments soften.
 
-![Sales Performance](assets\revenue_trend.png)
+![Sales Performance](assets/revenue_trend.png)
 
 ---
 
@@ -86,7 +86,7 @@ The core issue is this: **Olist is optimised for transaction volume, not custome
 
 - **Marketing spend is structurally inefficient under the current model.** With near-zero retention, the cost of acquiring each unit of revenue is fixed and high. A modest improvement in repeat purchase rate would have an outsized impact on overall marketing ROI and revenue sustainability.
 
-![Customer Retention](assets\repeat_vs_one_time.png)
+![Customer Retention](assets/repeat_vs_one_time.png)
 
 ---
 
@@ -100,7 +100,7 @@ The core issue is this: **Olist is optimised for transaction volume, not custome
 
 - **Dissatisfaction is predictable and therefore preventable.** Because delivery delay is the primary driver of low scores, the conditions that produce 1-star reviews can be identified before they occur — flagging at-risk orders for proactive communication or expedited handling would reduce negative reviews without requiring product changes.
 
-![Customer Satisfaction](assets\Delivery_Reviews.png)
+![Customer Satisfaction](assets/Delivery_Reviews.png)
 
 ---
 
@@ -114,7 +114,7 @@ The core issue is this: **Olist is optimised for transaction volume, not custome
 
 - **The gap between estimated and actual delivery dates is a controllable variable.** Improving the accuracy of delivery estimates at checkout — rather than just improving raw delivery speed — would reduce perceived failures and improve satisfaction scores even before logistics infrastructure is upgraded.
 
-![Delivery Operations](assets\Average_Delivery_time_state.png)
+![Delivery Operations](assets/Average_Delivery_time_state.png)
 
 ---
 
