@@ -33,7 +33,7 @@ The analytical schema consists of one central fact table, three dimension tables
 
 - **`olist_order_fact`** — the central fact table. One row per order, containing order status, purchase timestamp, estimated and actual delivery dates, and payment values. This is the primary source for revenue trending, delivery performance, and satisfaction analysis.
 
-- **`olist_customers`** — one row per customer. Contains `customer_id`, `customer_unique_id`, and geographic fields including city, state, and zip code prefix. The distinction between `customer_id` (order-level) and `customer_unique_id` (person-level) is critical for retention analysis — repeat purchases from the same person appear as separate `customer_id` values.
+- **`olist_customers`** — one row per customer. Contains `customer_id`, `customer_unique_id`, and geographic fields including city, state, and zip code prefix. The distinction between `customer_id` (order-level) and `customer_unique_id` (person-level) is critical for retention analysis, repeat purchases from the same person appear as separate `customer_id` values.
 
 - **`olist_products`** — product catalogue. Contains `product_id`, `product_category_name`, and physical attributes (weight, dimensions). Joined to order items to attribute revenue to product categories.
 
@@ -56,7 +56,7 @@ Olist generated **R$ 15.84M in revenue across ~99K orders** between 2016 and 201
 
 The data also reveals a clear link between delivery experience and customer satisfaction, customers who receive delayed orders give significantly lower reviews, and this effect is strongest among high-value buyers,the exact customers the business can least afford to lose. Delivery times vary dramatically by region, ranging from ~9 days in faster states to ~29 days in slower ones, creating an uneven customer experience that compounds the retention problem.
 
-The core issue is this: **Olist is optimised for transaction volume, not customer relationships** — and the data shows exactly what that costs.
+The core issue is this: **Olist is optimised for transaction volume, not customer relationships**, and the data shows exactly what that costs.
 
 ---
 
@@ -78,11 +78,11 @@ The core issue is this: **Olist is optimised for transaction volume, not custome
 
 ### Customer Retention
 
-- **96.9% of customers never return after their first purchase.** This is the single most important finding in the entire analysis. Only 3.1% of customers place a second order, meaning for every 100 customers Olist acquires, it retains fewer than 4. The business is running an acquisition treadmill — every unit of revenue growth requires a proportional increase in new customer spend, with no compounding effect from a loyal base.
+- **96.9% of customers never return after their first purchase.** This is the single most important finding in the entire analysis. Only 3.1% of customers place a second order, meaning for every 100 customers Olist acquires, it retains fewer than 4. The business is running an acquisition treadmill, every unit of revenue growth requires a proportional increase in new customer spend, with no compounding effect from a loyal base.
 
-- **High-value customers are not returning either.** Repeat purchase failure is not limited to low-spend customers. High-value first-time buyers churn at the same rate as everyone else, ruling out price sensitivity as the explanation. The data points instead to a structural absence of retention mechanics — no loyalty programs, no post-purchase nurture, no incentive to return.
+- **High-value customers are not returning either.** Repeat purchase failure is not limited to low-spend customers. High-value first-time buyers churn at the same rate as everyone else, ruling out price sensitivity as the explanation. The data points instead to a structural absence of retention mechanics, no loyalty programs, no post-purchase nurture, no incentive to return.
 
-- **The average number of orders per customer is close to 1.** This is not a rounding issue — it reflects genuine one-and-done behaviour across the customer base. Without intervention, the ceiling on customer lifetime value remains extremely low regardless of how much acquisition spend increases.
+- **The average number of orders per customer is close to 1.** This is not a rounding issue, it reflects genuine one-and-done behaviour across the customer base. Without intervention, the ceiling on customer lifetime value remains extremely low regardless of how much acquisition spend increases.
 
 - **Marketing spend is structurally inefficient under the current model.** With near-zero retention, the cost of acquiring each unit of revenue is fixed and high. A modest improvement in repeat purchase rate would have an outsized impact on overall marketing ROI and revenue sustainability.
 
@@ -92,7 +92,7 @@ The core issue is this: **Olist is optimised for transaction volume, not custome
 
 ### Customer Satisfaction
 
-- **Delivery time is the dominant driver of customer satisfaction — not product quality or price.** Customers who leave 1-star reviews experience delivery times approximately twice as long as those who leave 5-star reviews. The relationship between delay and dissatisfaction is consistent and clear across the dataset.
+- **Delivery time is the dominant driver of customer satisfaction, not product quality or price.** Customers who leave 1-star reviews experience delivery times approximately twice as long as those who leave 5-star reviews. The relationship between delay and dissatisfaction is consistent and clear across the dataset.
 
 - **High-spending customers are the most sensitive to poor delivery.** The customers generating the most revenue per transaction are also the most likely to leave low ratings when delivery underperforms. This creates a compounding risk: the highest-value segment is also the most at-risk when operations fail.
 
